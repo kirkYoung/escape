@@ -23,22 +23,27 @@
     </style>
     <div id="bodyDiv">
     
-        <p style="text-align:center; background-color: lime;" id="imgBg"><br><img src="images/pass1.png"width="330px" height="225px" alt=""><br><font style="font-size:100px"></font>
+        <p style="text-align:center; background-color: lime;" id="imgBg"><br><img src="images/pass2.png"width="330px" height="225px" alt=""><br><font style="font-size:100px"></font>
             <div id="time" style="text-align:center; background-color: lime;">
            <script type="text/javascript">
-               var t = new Date();
-               var hour = t.getHours();
-               var minute = t.getMinutes();
-               var second = t.getSeconds();
-               var nowTime =hour + ((minute < 10) ? ":0" : ":") + minute + ((second < 10) ? ":0" : ":") + second;
-               document.write(nowTime);
-               document.getElementById("time").style.fontSize="80px";
-			   
-			   var colorArr = new Array("maroon", "lime", "teal", "purple", "olive", "grey", "pink", "blue", "red","yellow","aqua","silver");
-	           var i = localStorage.value4*1;
-			   document.getElementById("imgBg").style.background = colorArr[i];
-	           document.getElementById("time").style.background = colorArr[i];
-           </script></div></p>
+			    var colorArr = new Array("maroon", "lime", "teal", "purple", "olive", "grey", "pink", "blue", "red","yellow","aqua","silver","fuchsia");
+	            var i = localStorage.value4*1;
+			    document.getElementById("imgBg").style.background = colorArr[i];
+	            document.getElementById("time").style.background = colorArr[i];
+           </script>
+                <font style="font-size:100px" id="mst">
+                    <script type="text/javascript">
+                            function showtime(){
+                                var t = new Date();
+                                var hour = t.getHours();
+                                var minute = t.getMinutes();
+                                var second = t.getSeconds();
+                                var nowTime = hour + ((minute < 10) ? ":0" : ":") + minute + ((second < 10) ? ":0" : ":") + second;
+                                document.getElementById("mst").innerHTML=nowTime;}
+                            setInterval(showtime, 1);
+                    </script>1
+                </font>
+        </div></p>
 
         <div class="weui-cells__title">学生返校通行证</div>
         <div class="weui-cells">

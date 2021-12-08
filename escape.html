@@ -181,7 +181,7 @@
 
        <!-- Unnamed (提交按钮) -->
       <div id="u5" class="ax_default html_button">
-        <input id="u5_input" type="button" value="生成出校通行证"/>
+        <input id="u5_input" type="button" value="疫情通审批页"/>
       
       <script>
         document.getElementById("u5_input").onclick=function(){
@@ -190,26 +190,7 @@
             localStorage.value2=document.getElementById("u2_input").value;
             localStorage.value3=document.getElementById("u3_input").value;
             localStorage.value4=document.getElementById("u4_input").value;
-            location.href="goout.html"
-          }else{
-            alert("不支持")
-          }
-        }
-      </script>
-      </div>
-
-      <!-- Unnamed (提交按钮) -->
-      <div id="u6" class="ax_default html_button">
-        <input id="u6_input" type="button" value="生成返校通行证"/>
-      
-      <script>
-        document.getElementById("u6_input").onclick=function(){
-          if (window.localStorage) {
-            localStorage.value1=document.getElementById("u1_input").value;
-            localStorage.value2=document.getElementById("u2_input").value;
-            localStorage.value3=document.getElementById("u3_input").value;
-            localStorage.value4=document.getElementById("u4_input").value;
-            location.href="back.html"
+            location.href="check.html"
           }else{
             alert("不支持")
           }
